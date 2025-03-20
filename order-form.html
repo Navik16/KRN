@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src='logo.jpg'></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order-form">
+        <div class="container">
+            <h2>Order Form</h2>
+            <form action="https://formspree.io/f/xvgtkokv" method="POST">
+                <!-- Full Name -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <!-- Email Address -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+    
+                <!-- Phone Number -->
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <!-- Delivery Address -->
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" required></textarea>
+    
+                <!-- Product Type -->
+                <label for="product">Product Type</label>
+                <select id="product" name="product">
+                    <option value="vehicle">Vehicle</option>
+                    <option value="machinery">Machinery</option>
+                    <option value="sparepart">Spare Part</option>
+                </select>
+    
+                <!-- Message -->
+                <label for="message">Additional Message</label>
+                <textarea id="message" name="message" placeholder="Write details about the product you require..." required></textarea>
+    
+                <!-- Country -->
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required>
+    
+                <!-- Company Name (Optional) -->
+                <label for="company">Company Name (Optional)</label>
+                <input type="text" id="company" name="company">
+    
+                <button type="submit" class="btn">Submit Order</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2025 Osaka Exporters | All rights reserved</p>
+    </footer>
+</body>
+</html>
